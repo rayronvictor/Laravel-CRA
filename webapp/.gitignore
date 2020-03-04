@@ -11,6 +11,9 @@
 # production
 /build
 
+# avoid server override
+/public/storage
+
 # misc
 .DS_Store
 .env.local
