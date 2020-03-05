@@ -13,6 +13,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+/*
+ * Qualquer outra rota vai para app.blade.php
+ */
+Route::get('{any}', function () {
     return view('app');
-});
+}).where(['any' => '.*']);
+
+//Route::get('/', function () {
+//    return view('app');
+//});
