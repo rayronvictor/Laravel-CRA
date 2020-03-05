@@ -155,6 +155,7 @@ services:
         - "${WORKSPACE_SSH_PORT}:22"
         - "${WORKSPACE_VUE_CLI_SERVE_HOST_PORT}:8080"
         - "${WORKSPACE_VUE_CLI_UI_HOST_PORT}:8000"
+        - "3000:3000"
       tty: true
       environment:
         - PHP_IDE_CONFIG=${PHP_IDE_CONFIG}
