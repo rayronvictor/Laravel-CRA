@@ -21,8 +21,7 @@ start:
 
 stop:
 	$(GOTO_LARA) && \
-	docker-compose stop && \
-	docker container prune -f
+	docker-compose stop
 
 bash:
 	$(GOTO_LARA) && $(EXEC_AS_LARA) bash
